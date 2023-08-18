@@ -1,11 +1,11 @@
 {
   "name": "forkify",
   "version": "1.0.0",
-  "description": "Recepi application",
+  "description": "Recipe application",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --no-scope-hoist"
   },
   "author": "Minh Lu Quang",
   "license": "ISC",

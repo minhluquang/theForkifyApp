@@ -111,9 +111,8 @@ export const deleteBookmark = function (id) {
 
 const init = function () {
   const storage = localStorage.getItem('bookmarks');
-  state.bookmarks = JSON.parse(storage);
+  if (storage) state.bookmarks = JSON.parse(storage);
 };
-
 init();
 
 export const uploadRecipe = async function (newRecipe) {
